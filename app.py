@@ -4,6 +4,11 @@ import plotly.express as px
 
 st.title('Análisis de Datos de Celdas de Carga')
 
+st.subheader('SISEMB SENA-TIC-Electrónica')
+st.caption('Instructor Investigador: Jhon Fredy Valencia Gómez')
+st.caption('Instructor Investigador: Hugo Alberto Santana')
+st.divider()
+
 uploaded_file = st.file_uploader("Upload a CSV file", type=["csv"])
 
 if uploaded_file is not None:
