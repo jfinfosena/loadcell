@@ -18,7 +18,7 @@ with st.container():
     col1.write('')   
     col1.write('**Cargo:**    Dinamizador SENNOVA.')   
     col1.write('**Función:**    Lider del proyecto')
-    col1.write('**Contacto:**    jjaramilloc@sena.edu.co')    
+    col1.write('**Contacto:**    jajaram0@unal.edu.co')    
     col2.image('jaime.png')
 
 
@@ -32,11 +32,11 @@ with st.container():
     col1.write('')   
     col1.write('**Cargo:**    Instructor Investigador')   
     col1.write('**Función:**    Diseño y desarrollo de software, firmware y hardware.')
-    col1.write('**Contacto:**    jfvalenciag@sena.edu.co')    
+    col1.write('**Contacto:**    jhonfredy@outlook.com')    
     col2.image('fredy.png')
 
 st.divider()
-st.header('Hugo Alberto Santana')
+st.header('Hugo Alberto Santana Mazo')
 
 with st.container():
     col1,col2=st.columns(2)
@@ -45,7 +45,7 @@ with st.container():
     col1.write('')    
     col1.write('**Cargo:**    Instructor Investigador')   
     col1.write('**Función:**    Diseño y desarrollo firmware y hardware.')
-    col1.write('**Contacto:**    jfvalenciag@sena.edu.co')    
+    col1.write('**Contacto:**    hugo.santana.sena@gmail.com')    
     col2.image('hugo.png')
 
 
@@ -59,5 +59,19 @@ with st.container():
     col1.write('')    
     col1.write('**Cargo:**    Investigador')   
     col1.write('**Función:**    Diseño y desarrollo mecanico y 3D.')
-    col1.write('**Contacto:**    jfvalenciag@sena.edu.co')    
+    col1.write('**Contacto:**    sebastian.tobon@gmail.com')    
     col2.image('sebastian.png')
+
+
+st.divider()
+st.title('Fabio Suarez')
+
+with st.container():
+    col1,col2=st.columns(2)
+    col1.write('')
+    col1.write('')
+    col1.write('')    
+    col1.write('**Cargo:**    Investigador')   
+    col1.write('**Función:**    Diseño y desarrollo mecanico')
+    col1.write('**Contacto:**    xx@sena.edu.co')    
+    col2.image('user.png')

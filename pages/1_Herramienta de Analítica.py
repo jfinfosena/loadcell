@@ -32,7 +32,7 @@ if uploaded_file is not None:
         loadcells_df.set_index('time', inplace=True) 
        
         fig = px.line(loadcells_df)    
-        fig.update_yaxes(title_text="Weight (kg)")
+        fig.update_yaxes(title_text="Weight (g)")
         fig.update_xaxes(title_text="Time (ms)")
         st.plotly_chart(fig)        
 
@@ -51,7 +51,7 @@ if uploaded_file is not None:
         loadcells_df = pd.DataFrame(loadcell_data)        
         loadcells_df.set_index('time', inplace=True)  
         fig = px.line(loadcells_df)  
-        fig.update_yaxes(title_text="Weight (kg)")
+        fig.update_yaxes(title_text="Weight (g)")
         fig.update_xaxes(title_text="Time (ms)")  
         st.plotly_chart(fig)
 
@@ -63,7 +63,7 @@ if uploaded_file is not None:
         loadcells_df = pd.DataFrame(loadcell_data)        
         loadcells_df.set_index('time', inplace=True)  
         fig = px.line(loadcells_df)  
-        fig.update_yaxes(title_text="Weight (kg)")
+        fig.update_yaxes(title_text="Weight (g)")
         fig.update_xaxes(title_text="Time (ms)")  
         st.plotly_chart(fig)
 
@@ -75,7 +75,7 @@ if uploaded_file is not None:
         loadcells_df = pd.DataFrame(loadcell_data)        
         loadcells_df.set_index('time', inplace=True)  
         fig = px.line(loadcells_df)    
-        fig.update_yaxes(title_text="Weight (kg)")
+        fig.update_yaxes(title_text="Weight (g)")
         fig.update_xaxes(title_text="Time (ms)")
         st.plotly_chart(fig)
 
@@ -87,7 +87,7 @@ if uploaded_file is not None:
         loadcells_df = pd.DataFrame(loadcell_data)        
         loadcells_df.set_index('time', inplace=True)  
         fig = px.line(loadcells_df)   
-        fig.update_yaxes(title_text="Weight (kg)")
+        fig.update_yaxes(title_text="Weight (g)")
         fig.update_xaxes(title_text="Time (ms)") 
         st.plotly_chart(fig)
 
@@ -99,7 +99,7 @@ if uploaded_file is not None:
         loadcells_df = pd.DataFrame(loadcell_data)        
         loadcells_df.set_index('time', inplace=True)  
         fig = px.line(loadcells_df) 
-        fig.update_yaxes(title_text="Weight (kg)")
+        fig.update_yaxes(title_text="Weight (g)")
         fig.update_xaxes(title_text="Time (ms)")   
         st.plotly_chart(fig)
 
@@ -111,7 +111,7 @@ if uploaded_file is not None:
         loadcells_df = pd.DataFrame(loadcell_data)        
         loadcells_df.set_index('time', inplace=True)   
         fig = px.line(loadcells_df)    
-        fig.update_yaxes(title_text="Weight (kg)")
+        fig.update_yaxes(title_text="Weight (g)")
         fig.update_xaxes(title_text="Time (ms)")
         st.plotly_chart(fig)
 
@@ -123,7 +123,7 @@ if uploaded_file is not None:
         loadcells_df = pd.DataFrame(loadcell_data)        
         loadcells_df.set_index('time', inplace=True)  
         fig = px.line(loadcells_df)    
-        fig.update_yaxes(title_text="Weight (kg)")
+        fig.update_yaxes(title_text="Weight (g)")
         fig.update_xaxes(title_text="Time (ms)")
         st.plotly_chart(fig)
 
