@@ -4,10 +4,7 @@ import plotly.express as px
 
 st.title('Análisis de Datos de Celdas de Carga')
 
-st.subheader('SISEMB SENA-TIC-Electrónica')
-st.caption('Instructor Investigador: Jhon Fredy Valencia Gómez')
-st.caption('Instructor Investigador: Hugo Alberto Santana')
-st.divider()
+st.write("""\n Esta aplicación permite cargar archivos con la información obtenida de diferentes sensores, y procesarla de forma sencilla. Muestra gráficos que ilustran el comportamiento de cada parámetro a lo largo del tiempo.\n""")
 
 uploaded_file = st.file_uploader("Upload a CSV file", type=["csv"])
 
@@ -35,6 +32,8 @@ if uploaded_file is not None:
         loadcells_df.set_index('time', inplace=True) 
        
         fig = px.line(loadcells_df)    
+        fig.update_yaxes(title_text="Weight (kg)")
+        fig.update_xaxes(title_text="Time (ms)")
         st.plotly_chart(fig)        
 
         # Calculate load cell statistics
@@ -51,7 +50,9 @@ if uploaded_file is not None:
         }
         loadcells_df = pd.DataFrame(loadcell_data)        
         loadcells_df.set_index('time', inplace=True)  
-        fig = px.line(loadcells_df)    
+        fig = px.line(loadcells_df)  
+        fig.update_yaxes(title_text="Weight (kg)")
+        fig.update_xaxes(title_text="Time (ms)")  
         st.plotly_chart(fig)
 
         st.header("Load Cell 2")
@@ -61,7 +62,9 @@ if uploaded_file is not None:
         }
         loadcells_df = pd.DataFrame(loadcell_data)        
         loadcells_df.set_index('time', inplace=True)  
-        fig = px.line(loadcells_df)    
+        fig = px.line(loadcells_df)  
+        fig.update_yaxes(title_text="Weight (kg)")
+        fig.update_xaxes(title_text="Time (ms)")  
         st.plotly_chart(fig)
 
         st.header("Load Cell 3")
@@ -72,6 +75,8 @@ if uploaded_file is not None:
         loadcells_df = pd.DataFrame(loadcell_data)        
         loadcells_df.set_index('time', inplace=True)  
         fig = px.line(loadcells_df)    
+        fig.update_yaxes(title_text="Weight (kg)")
+        fig.update_xaxes(title_text="Time (ms)")
         st.plotly_chart(fig)
 
         st.header("Load Cell 4")
@@ -81,7 +86,9 @@ if uploaded_file is not None:
         }
         loadcells_df = pd.DataFrame(loadcell_data)        
         loadcells_df.set_index('time', inplace=True)  
-        fig = px.line(loadcells_df)    
+        fig = px.line(loadcells_df)   
+        fig.update_yaxes(title_text="Weight (kg)")
+        fig.update_xaxes(title_text="Time (ms)") 
         st.plotly_chart(fig)
 
         st.header("Load Cell 5")
@@ -91,7 +98,9 @@ if uploaded_file is not None:
         }
         loadcells_df = pd.DataFrame(loadcell_data)        
         loadcells_df.set_index('time', inplace=True)  
-        fig = px.line(loadcells_df)    
+        fig = px.line(loadcells_df) 
+        fig.update_yaxes(title_text="Weight (kg)")
+        fig.update_xaxes(title_text="Time (ms)")   
         st.plotly_chart(fig)
 
         st.header("Load Cell 6")
@@ -102,6 +111,8 @@ if uploaded_file is not None:
         loadcells_df = pd.DataFrame(loadcell_data)        
         loadcells_df.set_index('time', inplace=True)   
         fig = px.line(loadcells_df)    
+        fig.update_yaxes(title_text="Weight (kg)")
+        fig.update_xaxes(title_text="Time (ms)")
         st.plotly_chart(fig)
 
         st.header("Load Cell 7")
@@ -112,6 +123,8 @@ if uploaded_file is not None:
         loadcells_df = pd.DataFrame(loadcell_data)        
         loadcells_df.set_index('time', inplace=True)  
         fig = px.line(loadcells_df)    
+        fig.update_yaxes(title_text="Weight (kg)")
+        fig.update_xaxes(title_text="Time (ms)")
         st.plotly_chart(fig)
 
         st.header("Data")

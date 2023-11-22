@@ -1,0 +1,6 @@
+import streamlit as st
+
+
+st.write(
+    """\n # Manual de Uso Plataforma Multi-celdas de Carga\n\nLa aplicación permite medir peso en 7 celdas de carga independientes, calibrando cada celda y guardando los datos medidos.\n\nConfiguración Inicial\nAl iniciar, se calibran las celdas de carga con los factores guardados previamente.\n\nMedición de Peso\nSe muestran los valores medidos en cada celda actualizados cada segundo.\n\n # Menú de Opciones\nMantener presionado el botón durante más de 3 segundos después de un reseteo se despliega el menú:\n\n- Calibrar toda las celdas\n- Calibrar cada celda individualmente\n- Establecer muestras por captura\n- Configurar fecha y hora\n # Calibración de Celdas\nColoca un peso conocido, ingresa el valor y calcula el factor de escala para cada celda.\n\n # Captura de Datos\nAl presionar brevemente el botón se captura la medición de las 7 celdas guardando en un archivo SD con la fecha y hora.\n\n # Configuración\nPermite establecer parámetros como fecha, hora, cantidad de muestras por medición desde el monitor serie.\n\nLa aplicación mide en forma continua el peso en 7 celdas de manera independiente, permitiendo calibración individual, captura y almacenamiento de datos.\n"""
+)
