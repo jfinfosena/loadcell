@@ -45,7 +45,7 @@ if uploaded_file is not None:
         
         st.header("Load Cell 1")
         loadcell_data = {
-            'time': df.loc[:, 'Time(us)'],
+            'time': df.loc[:, 'Time(us)'].apply(lambda x: format_str.format(x/1000000)),            
             'LoadCell1': df.loc[:, 'LoadCell1']                        
         }
         loadcells_df = pd.DataFrame(loadcell_data)        
