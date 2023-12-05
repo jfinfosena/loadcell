@@ -57,7 +57,7 @@ if uploaded_file is not None:
 
         st.header("Load Cell 2")
         loadcell_data = {
-            'time': df.loc[:, 'Time(us)'],
+            'time': df.loc[:, 'Time(us)'].apply(lambda x: format_str.format(x/1000000)), 
             'LoadCell2': df.loc[:, 'LoadCell2']                        
         }
         loadcells_df = pd.DataFrame(loadcell_data)        
@@ -69,7 +69,7 @@ if uploaded_file is not None:
 
         st.header("Load Cell 3")
         loadcell_data = {
-            'time': df.loc[:, 'Time(us)'],
+            'time': df.loc[:, 'Time(us)'].apply(lambda x: format_str.format(x/1000000)), 
             'LoadCell3': df.loc[:, 'LoadCell3']                        
         }
         loadcells_df = pd.DataFrame(loadcell_data)        
@@ -81,7 +81,7 @@ if uploaded_file is not None:
 
         st.header("Load Cell 4")
         loadcell_data = {
-            'time': df.loc[:, 'Time(us)'],
+            'time': df.loc[:, 'Time(us)'].apply(lambda x: format_str.format(x/1000000)), 
             'LoadCell4': df.loc[:, 'LoadCell4']                        
         }
         loadcells_df = pd.DataFrame(loadcell_data)        
@@ -93,7 +93,7 @@ if uploaded_file is not None:
 
         st.header("Load Cell 5")
         loadcell_data = {
-            'time': df.loc[:, 'Time(us)'],
+            'time': df.loc[:, 'Time(us)'].apply(lambda x: format_str.format(x/1000000)), 
             'LoadCell5': df.loc[:, 'LoadCell5']                        
         }
         loadcells_df = pd.DataFrame(loadcell_data)        
@@ -105,7 +105,7 @@ if uploaded_file is not None:
 
         st.header("Load Cell 6")
         loadcell_data = {
-            'time': df.loc[:, 'Time(us)'],
+            'time': df.loc[:, 'Time(us)'].apply(lambda x: format_str.format(x/1000000)), 
             'LoadCell6': df.loc[:, 'LoadCell6']                        
         }
         loadcells_df = pd.DataFrame(loadcell_data)        
@@ -117,7 +117,7 @@ if uploaded_file is not None:
 
         st.header("Load Cell 7")
         loadcell_data = {
-            'time': df.loc[:, 'Time(us)'],
+            'time': df.loc[:, 'Time(us)'].apply(lambda x: format_str.format(x/1000000)),
             'LoadCell7': df.loc[:, 'LoadCell7']                        
         }
         loadcells_df = pd.DataFrame(loadcell_data)        
